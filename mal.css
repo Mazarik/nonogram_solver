@@ -1,0 +1,62 @@
+table {
+  border-collapse: collapse;
+}
+table #main {
+  display: table-cell;
+  z-index: 1;
+}
+td {
+  border: solid 1px black; 
+//  min-width: 2.5em;
+//  height: 2.5em;
+  min-width: 1.25em;
+  height: 1.25em;
+  background-color: white;
+  text-align: center;
+  font-size:0.7em;
+}
+td.fifth_row {
+  border-bottom-width : 2px;
+}
+td.fifth_col {
+  border-right-width : 2px;
+}
+
+#main tr:hover td, .colcl {
+  -webkit-filter  : invert(100%) !important; 
+  -moz-filter : invert(100%) !important;
+  -ms-filter  : invert(100%) !important;
+  -o-filter   : invert(100%) !important;
+  filter    : invert(100%) !important;     
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'invert\'><feColorMatrix in='SourceGraphic' type='matrix' values='-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0'/></filter></svg>#invert");
+  //background-color : red !important;
+  //filter: alpha(opacity=10);
+  //opacity: 0.1;
+}
+
+table#cols {
+}
+
+table#rows {
+  display: table-cell;
+}
+
+div#cont {
+  display: table;
+}
+
+.black {
+  background-color: black;
+}
+
+.green {
+  background-color: green;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}

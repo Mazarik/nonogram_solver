@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+	<TITLE></TITLE>
+  <link href="mal.css" rel="stylesheet" type="text/css"></link>
+  <script src="mal.js"></script>
+</HEAD>
+<BODY id="body" onload="on_load()">
+<div>
+<table id="cols">
+</table>
+<div id="cont">
+  <table id="rows">
+  </table>
+  <table id="main">
+  </table> 
+</div>
+</div>
+<div>
+  <form onsubmit="return(false)">
+    <div>
+      <div>
+        <div><input name="speed" checked="true" id="fast" type="radio" onchange="change_speed()">Rychlo</input></div>
+        <div>
+          <input name="speed" id="slow" type="radio" onchange="change_speed()">Pomaly</input>
+          <span id="slowing">Spomalenie:<input id="slowingvalue" type="number" min="0" value="5"></span>
+        </div>
+      <div>
+    </div>
+    </form>
+    <!--
+  <button onclick="MAL.set_griddle('heart')">Srdce</button>
+  <button onclick="MAL.set_griddle('heart')">Srdce</button>
+  <button onclick="MAL.set_griddle('heart')">Srdce</button>
+  <button onclick="MAL.set_griddle('heart')">Srdce</button>
+  <button onclick="MAL.set_griddle('heart')">Srdce</button>
+  -->
+</div>
+<p>
+  Fifo depth: <span id="fifo_depth">0</span><br/>
+  Actual draw: <span id="fifo_draw"></span>
+</p>
+<div id="errors"></div>
+<div id="changes"></div>
+</BODY>
+</HTML> 
+
